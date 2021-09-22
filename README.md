@@ -8,14 +8,21 @@ Le laboratoire a pour but de jouer une vidéo avec l'API DirectShow de Microsoft
 
 ## Installation
 
-Installer [Visual Studio](https://visualstudio.microsoft.com/fr/downloads/) et ouvrir le projet "Laboratoire1.sln".
+Installer [Visual Studio](https://visualstudio.microsoft.com/fr/downloads/) et clôner le projet directement dans visual studio ou par la commande suivante:
+```
+git clone https://github.com/jovil210/lab1_logiciel.git
+```
 
-## Usage
-Il est important de garder les lignes suivantes au début du code:
+et ouvrir "Laboratoire1.sln" avec Visual Studio.
+
+Il ne devrait pas y avoir d'erreur sinon, vérifier que la première ligne est bel et bien 
+
 ```cpp
 #pragma comment(lib, "Strmiids.lib")
-#include "lecture.h"
 ```
+Sinon, ouvrir  Projet->Propriétés->Éditeur de liens->Système et modifier Sous-Système pour avoir Console (/SUBSYSTEM:CONSOLE).
+
+## Usage
 Le programme démarre la vidéo indiqué à la ligne suivante:
 
 ```cpp
@@ -27,11 +34,13 @@ Finalement, la bibliothèque "lecture.h" s'occupe de faire quelque initialisatio
 ```cpp
 hr = VideoLoop();
 ``` 
-La vidéo devrait démarrer et faire les 4 fonctions nommés plus haut:
+La vidéo devrait démarrer et faire les 4 fonctions nommées plus haut:
 * P: Play/Pause
 * A: Accélérer
 * R: Retour au début
 * Q: Quitter
+
+N.B: Les lettres doivent être taper directement dans la console ouverte par Visual Studio et non sur la vidéo
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

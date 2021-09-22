@@ -1,0 +1,2 @@
+C:\Users\jvillene13\Desktop\lab1_logiciel\x64\Debug\Laboratoire1.exe
+C:\Users\jvillene13\Desktop\lab1_logiciel\x64\Debug\Laboratoire1.pdb
