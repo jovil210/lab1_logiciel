@@ -21,6 +21,7 @@ Il ne devrait pas y avoir d'erreur sinon, vérifier que la première ligne est b
 #pragma comment(lib, "Strmiids.lib")
 ```
 Sinon, ouvrir  *Projet->Propriétés->Éditeur de liens->Système* et modifier Sous-Système pour avoir 
+
 **Console (/SUBSYSTEM:CONSOLE)**
 
 ## Usage
