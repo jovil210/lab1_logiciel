@@ -20,7 +20,8 @@ Il ne devrait pas y avoir d'erreur sinon, vérifier que la première ligne est b
 ```cpp
 #pragma comment(lib, "Strmiids.lib")
 ```
-Sinon, ouvrir  Projet->Propriétés->Éditeur de liens->Système et modifier Sous-Système pour avoir Console (/SUBSYSTEM:CONSOLE).
+Sinon, ouvrir  *Projet->Propriétés->Éditeur de liens->Système* et modifier Sous-Système pour avoir 
+**Console (/SUBSYSTEM:CONSOLE)**
 
 ## Usage
 Le programme démarre la vidéo indiqué à la ligne suivante:
@@ -30,17 +31,13 @@ hr = g_pPlayer->OpenFile(L"Example.avi");
 ```
 Il est important d'écrire le nom du fichier avec le bon emplacement de dossier. L'example devrait fonctionner puisque "Example.avi" se trouve dans la repo.
 
-Finalement, la bibliothèque "lecture.h" s'occupe de faire quelque initialisation avec l'API DirectShow et la boucle principale se fait dans la fonction
-```cpp
-hr = VideoLoop();
-``` 
 La vidéo devrait démarrer et faire les 4 fonctions nommées plus haut:
 * P: Play/Pause
 * A: Accélérer
 * R: Retour au début
 * Q: Quitter
 
-N.B: Les lettres doivent être taper directement dans la console ouverte par Visual Studio et non sur la vidéo
+N.B: Les lettres doivent être tapées directement dans la console ouverte par Visual Studio et non sur la vidéo
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
